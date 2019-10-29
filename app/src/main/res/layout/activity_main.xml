@@ -45,41 +45,42 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/plusFive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="28dp"
-        android:text="Button"
+        android:text="Plus"
         app:layout_constraintBottom_toTopOf="@+id/lifeTotal3"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/minusFive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="28dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/lifeTotal3"
-        tools:layout_editor_absoluteX="4dp" />
+        android:text="Minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lifeTotal3" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/plusOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="28dp"
-        android:text="Button"
+        android:text="Plus"
         app:layout_constraintBottom_toTopOf="@+id/lifeTotal2"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/minusOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="4dp"
-        android:text="Button"
+        android:text="Minus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lifeTotal2" />
 
