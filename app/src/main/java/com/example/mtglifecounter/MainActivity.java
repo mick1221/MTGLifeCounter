@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 String lifeString = lifeTotal.getText().toString();
-                int life=Integer.parseInt(lifeString.trim());
+                Integer life=Integer.parseInt(lifeString.trim());
                 life+=5;
-                lifeTotal.setText(life);
+                lifeTotal.setText(life.toString());
             }
         });
     }
