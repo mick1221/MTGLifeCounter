@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Button minusFive;
         Button plusOne;
         Button minusOne;
+        Button reset;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         minusFive = findViewById(R.id.minusFive);
         plusOne = findViewById(R.id.plusOne);
         minusOne = findViewById(R.id.minusOne);
+        reset = findViewById(R.id.reset);
 
 
 
@@ -71,6 +73,17 @@ public class MainActivity extends AppCompatActivity {
                 String lifeString = lifeTotal.getText().toString();
                 Integer life=Integer.parseInt(lifeString.trim());
                 life-=1;
+                lifeTotal.setText(life.toString());
+            }
+        });
+
+
+        //Resets the life counter  to 40
+        reset.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Integer life=40;
                 lifeTotal.setText(life.toString());
             }
         });
