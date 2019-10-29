@@ -30,12 +30,47 @@ public class MainActivity extends AppCompatActivity {
         minusOne = findViewById(R.id.minusOne);
 
 
+
+        //adds 5 to life
         plusFive.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                String lifeString = lifeTotal.getText().toString();//get current life from textview
+                Integer life=Integer.parseInt(lifeString.trim());//parse the integer
+                life+=5;//increment
+                lifeTotal.setText(life.toString());//print new total
+            }
+        });
+
+        //subtracts 5 from life
+         minusFive.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 String lifeString = lifeTotal.getText().toString();
                 Integer life=Integer.parseInt(lifeString.trim());
-                life+=5;
+                life-=5;
+                lifeTotal.setText(life.toString());
+            }
+        });
+
+         //adds one to life
+        plusOne.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                String lifeString = lifeTotal.getText().toString();
+                Integer life=Integer.parseInt(lifeString.trim());
+                life+=1;
+                lifeTotal.setText(life.toString());
+            }
+        });
+
+        //subtracts one from life
+        minusOne.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                String lifeString = lifeTotal.getText().toString();
+                Integer life=Integer.parseInt(lifeString.trim());
+                life-=1;
                 lifeTotal.setText(life.toString());
             }
         });
